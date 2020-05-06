@@ -14,7 +14,7 @@ async def on_message(message):
                     unique = False
                     user['xp'] += len(message.content.split(" "))
                     level_before = user['level']
-                    for i in range (len(LEVELS)):
+                    for i in range(len(LEVELS)):
                         if user['xp'] > LEVELS[i]:
                             user['level'] = i + 1
                     ## WSTAW TUTAJ PĘTLĘ CZY USER
